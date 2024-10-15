@@ -10,7 +10,7 @@ const About = () => {
           Hi, I'm Mwirigi.
           <br className="hidden lg:inline-block" />I'm a Software Developer
           <br className="hidden lg:inline-block" />We lock-in here fam!
-          <br className="hidden lg:inline-block" />⭐⭐⭐
+          <br className="hidden lg:inline-block" />⭐⭐⭐⭐⭐
         </h1>
         <p className="mb-8 leading-relaxed">
         A self-motivated, passionate, enthusiastic and a certified software engineer from Moringa School . I
@@ -31,11 +31,12 @@ organizational skills, self-driven, strong analytical skills as well as a good t
         </div>
       </div>
       <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-        <img
-          className="object-cover object-center rounded"
-          alt="about"
-          src={Logo}
-        />
+      <img
+  className="object-cover object-center rounded w-64 ml-auto"
+  alt="about"
+  src={Logo}
+/>
+
       </div>
     </div>
   </section>
