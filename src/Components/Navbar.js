@@ -3,7 +3,7 @@ import logo from '../Components/Assets/about-pic.png';
 
 const Navbar = () => {
   const [activeTab, setActiveTab] = useState(window.location.hash || "#about");
-     
+
   // Update active tab on window hash change
   useEffect(() => {
     const handleHashChange = () => {
@@ -22,8 +22,8 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-gray-800 md:sticky top-0 z-10">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center space-x-4">
+    <header className="bg-gray-800 sticky top-0 z-10">
+      <div className="container mx-auto flex p-5 items-center justify-center space-x-4 flex-nowrap">
         <a
           href="#about"
           onClick={() => handleTabClick("#about")}
@@ -63,7 +63,6 @@ const Navbar = () => {
         >
           Contact
         </a>
-        
       </div>
     </header>
   );

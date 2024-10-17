@@ -1,6 +1,8 @@
 export const skills = [
     { name: 'HTML' },
     { name: 'CSS' },
+    { name: 'Bootstrap CSS' },
+    { name: 'Tailwind CSS' },
     { name: 'JavaScript' },
     { name: 'React' },
     { name: 'Python' },
@@ -8,4 +10,6 @@ export const skills = [
     { name: 'Flask' },
     { name: 'UI/UX Design' },
     { name: 'Graphic Design' },
+    { name: 'Git' },
+   
   ];

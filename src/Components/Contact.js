@@ -1,4 +1,5 @@
 import React from "react";
+import emailjs from 'emailjs-com'; // Import EmailJS
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"; // Import Font Awesome icons
 
 export default function Contact() {
@@ -6,23 +7,31 @@ export default function Contact() {
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
 
-  function encode(data) {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  }
-
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
-    })
-      .then(() => alert("Message sent!"))
-      .catch((error) => alert(error));
+
+    const templateParams = {
+      from_name: name,
+      reply_to: email,
+      message: message,
+    };
+
+    emailjs.send('service_evin1ig', 'template_u8tudag', templateParams, '7PyrRrnhnv9D__Vb_')
+      .then(() => {
+        alert("Message sent!");
+        // Clear the input fields after submission
+        setName("");
+        setEmail("");
+        setMessage("");
+      })
+      .catch((error) => alert("Error sending message: " + error));
+  }
+
+  // Function to handle keydown event
+  function handleKeyDown(e) {
+    if (e.key === 'Enter') {
+      handleSubmit(e);
+    }
   }
 
   return (
@@ -69,13 +78,28 @@ export default function Contact() {
 
               {/* Social Links */}
               <div className="flex space-x-4 mt-2">
-                <a href="https://www.linkedin.com/in/lawrence-mwirigi-441b482a2/" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:text-indigo-600">
+                <a
+                  href="https://www.linkedin.com/in/lawrence-mwirigi-441b482a2/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-indigo-400 hover:text-indigo-600"
+                >
                   <FaLinkedin size={24} />
                 </a>
-                <a href="https://github.com/iamMwirigi" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:text-indigo-600">
+                <a
+                  href="https://github.com/iamMwirigi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-indigo-400 hover:text-indigo-600"
+                >
                   <FaGithub size={24} />
                 </a>
-                <a href="https://x.com/mwi_mwirigi" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:text-indigo-600">
+                <a
+                  href="https://x.com/mwi_mwirigi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-indigo-400 hover:text-indigo-600"
+                >
                   <FaTwitter size={24} />
                 </a>
               </div>
@@ -85,17 +109,16 @@ export default function Contact() {
 
         {/* Contact Form */}
         <form
-          netlify
-          name="contact"
           onSubmit={handleSubmit}
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+          onKeyDown={handleKeyDown} // Add this line
         >
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
             Hire Me
           </h2>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">
-              Name
+              Your Name / Company Name
             </label>
             <input
               type="text"
@@ -103,11 +126,13 @@ export default function Contact() {
               name="name"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               onChange={(e) => setName(e.target.value)}
+              value={name} // Add value for controlled input
+              required
             />
           </div>
           <div className="relative mb-4">
             <label htmlFor="email" className="leading-7 text-sm text-gray-400">
-              Email
+              Your Email
             </label>
             <input
               type="email"
@@ -115,17 +140,21 @@ export default function Contact() {
               name="email"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               onChange={(e) => setEmail(e.target.value)}
+              value={email} // Add value for controlled input
+              required
             />
           </div>
           <div className="relative mb-4">
             <label htmlFor="message" className="leading-7 text-sm text-gray-400">
-              Message
+              Compose Your Message
             </label>
             <textarea
               id="message"
               name="message"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               onChange={(e) => setMessage(e.target.value)}
+              value={message} // Add value for controlled input
+              required
             />
           </div>
           <button
