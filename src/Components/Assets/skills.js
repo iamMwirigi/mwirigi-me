@@ -9,7 +9,6 @@ export const skills = [
     { name: 'Django' },
     { name: 'Flask' },
     { name: 'UI/UX Design' },
-    { name: 'Graphic Design' },
     { name: 'Git' },
    
   ];

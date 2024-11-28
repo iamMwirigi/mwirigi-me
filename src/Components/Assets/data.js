@@ -2,17 +2,17 @@
 const projectOne = {
     id: 1,
     name: 'Weather app',
-    description: 'This is my first project',
+    description: 'An intuitive weather application built using React and integrated with a weather API',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    link: 'https://iammwirigi.github.io/project-weather/'
+    link: 'https://weatherapp-woad-pi.vercel.app/'
   };
   
   const projectTwo = {
     id: 2,
-    name: 'Soko Safi',
-    description: 'This is my second project',
-    technologies: ['React'],
-    link: 'https://phase-2-project-tau.vercel.app/'
+    name: 'Project Soko',
+    description: 'Project Soko is an online platform designed to connect buyers and sellers, specifically focusing on a marketplace for various goods. It aims to streamline the buying and selling process by providing a user-friendly interface for vendors to list their products, manage inventories, and communicate with customers.',
+    technologies: ['HTML', 'CSS', 'Javascript', 'React'],
+    link: '/'
   };
   
   // Add more projects as needed
@@ -20,8 +20,8 @@ const projectOne = {
     id: 3,
     name: 'Bot Battlr',
     description: 'This is the third project',
-    technologies: ['React'],
-    link: 'https://iammwirigi.github.io/bank-of-flatiron/'
+    technologies: ['Python', 'Django', 'JavaScript', 'React'],
+    link: '/'
   };
   
   // Export the projects using named exports

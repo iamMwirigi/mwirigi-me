@@ -1,6 +1,6 @@
 import React from "react";
 import emailjs from 'emailjs-com'; // Import EmailJS
-import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"; // Import Font Awesome icons
+import { FaLinkedin, FaGithub, FaTwitter, FaSpotify, FaInstagram } from "react-icons/fa"; // Import Font Awesome icons
 
 export default function Contact() {
   const [name, setName] = React.useState("");
@@ -59,7 +59,7 @@ export default function Contact() {
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 ADDRESS
               </h2>
-              <p className="mt-1">Uthiru, Nairobi, Kenya</p>
+              <p className="mt-1">Uthiru, Nairobi, Kenya.</p>
             </div>
             <div className="px-4 mb-2">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
@@ -74,7 +74,9 @@ export default function Contact() {
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-2">
                 PHONE
               </h2>
-              <p className="leading-relaxed">+254714593953</p>
+              <a href="tel:+254714593953" className="leading-relaxed ">
+                +254714593953
+              </a>
 
               {/* Social Links */}
               <div className="flex space-x-4 mt-2">
@@ -102,6 +104,25 @@ export default function Contact() {
                 >
                   <FaTwitter size={24} />
                 </a>
+
+                <a
+                  href="https://open.spotify.com/playlist/3aAVCs17Gax0xQ8D6NNQ43?si=f453fc89a61e4a38"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-indigo-400 hover:text-indigo-600"
+                >
+                  <FaSpotify size={24} />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/mwirig.i/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-indigo-400 hover:text-indigo-600"
+                >
+                  <FaInstagram size={24} />
+                </a>
+
               </div>
             </div>
           </div>
@@ -117,9 +138,7 @@ export default function Contact() {
             Hire Me
           </h2>
           <div className="relative mb-4">
-            <label htmlFor="name" className="leading-7 text-sm text-gray-400">
-              Your Name / Company Name
-            </label>
+            
             <input
               type="text"
               id="name"
@@ -127,13 +146,14 @@ export default function Contact() {
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               onChange={(e) => setName(e.target.value)}
               value={name} // Add value for controlled input
+              placeholder="Enter your name or company name"  // Placeholder text
               required
             />
+            <p className="text-xs text-gray-400 mt-2">Please enter your full name or company name.</p> {/* Helper text */}
           </div>
+
           <div className="relative mb-4">
-            <label htmlFor="email" className="leading-7 text-sm text-gray-400">
-              Your Email
-            </label>
+            
             <input
               type="email"
               id="email"
@@ -141,22 +161,26 @@ export default function Contact() {
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               onChange={(e) => setEmail(e.target.value)}
               value={email} // Add value for controlled input
+              placeholder="Enter your email address"  // Placeholder text
               required
             />
+            <p className="text-xs text-gray-400 mt-2">Enter a valid email address so we can get in touch.</p> {/* Helper text */}
           </div>
+
           <div className="relative mb-4">
-            <label htmlFor="message" className="leading-7 text-sm text-gray-400">
-              Compose Your Message
-            </label>
+          
             <textarea
               id="message"
               name="message"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               onChange={(e) => setMessage(e.target.value)}
               value={message} // Add value for controlled input
+              placeholder="Write your message here..."  // Placeholder text
               required
             />
+            <p className="text-xs text-gray-400 mt-2">Please provide a detailed message for your inquiry.</p> {/* Helper text */}
           </div>
+
           <button
             type="submit"
             className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
