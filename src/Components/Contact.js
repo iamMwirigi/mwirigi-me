@@ -44,7 +44,7 @@ export default function Contact() {
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
           onKeyDown={handleKeyDown} // Add this line
         >
-          <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
+          <h2 className="text-white sm:text-4xl text-3xl mb-9 font-medium title-font text-center">
            Work With Me
           </h2>
           <div className="relative mb-4">
