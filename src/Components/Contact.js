@@ -106,7 +106,7 @@ export default function Contact() {
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 ADDRESS
               </h2>
-              <p className="mt-1">Uthiru, Nairobi, Kenya.</p>
+              <p className="mt-1">UTOPIA.</p>
             </div>
 
             {/* Map Container - Placed between Address and Email */}
