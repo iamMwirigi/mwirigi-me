@@ -10,7 +10,7 @@ const projectOne = {
   const projectTwo = {
     id: 2,
     name: 'Project Soko',
-    description: 'Project Soko is an online platform designed to connect buyers and sellers, specifically focusing on a marketplace for various goods. It aims to streamline the buying and selling process by providing a user-friendly interface for vendors to list their products, manage inventories, and communicate with customers.',
+    description: ' Project Soko is an e-commerce website designed for a clothing store. It focuses on providing a seamless shopping experience for users to browse, select, and purchase clothing items.',
     technologies: ['HTML', 'CSS', 'Javascript', 'React'],
     link: '/'
   };

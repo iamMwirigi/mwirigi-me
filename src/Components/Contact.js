@@ -45,7 +45,7 @@ export default function Contact() {
           onKeyDown={handleKeyDown} // Add this line
         >
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
-            Hire Me
+           Work With Me
           </h2>
           <div className="relative mb-4">
             
