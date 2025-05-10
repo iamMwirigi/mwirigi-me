@@ -19,15 +19,14 @@ const projectOne = {
   const projectThree = {
     id: 3,
     name: 'Bot Battlr',
-    description: 'This is the third project',
+    description: 'A battle simulation platform where users can create, customize, and battle bots. Built with Python, Django, and React.',
     technologies: ['Python', 'Django', 'JavaScript', 'React'],
     link: '/'
   };
   
   // Export the projects using named exports
   export { projectOne, projectTwo, projectThree };
-  
 
 
 
-  
+

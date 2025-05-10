@@ -18,7 +18,7 @@ function Projects() {
         <div className="flex flex-wrap -m-4">
           {projects.map((project) => (
             <div key={project.id} className="p-4 md:w-1/3">
-              <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
+              <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded min-h-[300px]">
                 <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                   {project.name}
                 </h2>
