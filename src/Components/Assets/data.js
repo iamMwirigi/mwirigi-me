@@ -9,10 +9,10 @@ const projectOne = {
   
   const projectTwo = {
     id: 2,
-    name: 'Project Soko',
+    name: 'Project Thoko',
     description: ' Project Soko is an e-commerce website designed for a clothing store. It focuses on providing a seamless shopping experience for users to browse, select, and purchase clothing items.',
     technologies: ['HTML', 'CSS', 'Javascript', 'React'],
-    link: '/'
+    link: 'https://project-soko.vercel.app/'
   };
   
   // Add more projects as needed
