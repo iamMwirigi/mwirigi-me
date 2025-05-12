@@ -11,17 +11,17 @@ const projectOne = {
     id: 2,
     name: 'Project Thoko',
     description: ' Project Soko is an e-commerce website designed for a clothing store. It focuses on providing a seamless shopping experience for users to browse, select, and purchase clothing items.',
-    technologies: ['HTML', 'CSS', 'Javascript', 'React'],
+    technologies: ['HTML', 'CSS', 'Javascript', 'React', 'Tailwind CSS'],
     link: 'https://project-soko.vercel.app/'
   };
   
   // Add more projects as needed
   const projectThree = {
     id: 3,
-    name: 'Bot Battlr',
-    description: 'A battle simulation platform where users can create, customize, and battle bots. Built with Python, Django, and React.',
-    technologies: ['Python', 'Django', 'JavaScript', 'React'],
-    link: '/'
+    name: 'Ecommerce',
+    description: 'Project Soko is an e-commerce website designed for a clothing store. It focuses on providing a seamless shopping experience for users to browse, select, and purchase clothing items.',
+    technologies: ['Firebase',  'JavaScript', 'React'],
+    link: 'https://project-thoko.vercel.app/'
   };
   
   // Export the projects using named exports
