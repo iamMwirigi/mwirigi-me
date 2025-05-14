@@ -21,7 +21,7 @@ const projectOne = {
     name: 'Ecommerce',
     description: 'Project Soko is an e-commerce website designed for a clothing store. It focuses on providing a seamless shopping experience for users to browse, select, and purchase clothing items.',
     technologies: ['Firebase',  'JavaScript', 'React'],
-    link: 'https://project-thoko.vercel.app/'
+    link: '/'
   };
   
   // Export the projects using named exports
