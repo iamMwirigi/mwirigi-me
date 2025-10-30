@@ -49,11 +49,11 @@ const columns = [
         features: ['Complex CRM system', 'AI integration', 'Multi-tenant SaaS', 'Advanced analytics'],
       },
     ],
-    footer: 'Retainer: $400 – $800/month',
+    footer: 'Retainer: $350 – $800/month',
   },
   {
     title: 'Frontend Development',
-    subtitle: 'Modern interfaces with React, Svelte, Vue, or Astro',
+    subtitle: 'Modern interfaces with React, Tailwind CSS, and Vercel',
     plans: [
       {
         title: 'Landing Page',
@@ -74,7 +74,7 @@ const columns = [
         features: ['Real-time updates', 'User dashboards', 'Complex interactions', 'State management'],
       },
     ],
-    footer: 'Hourly rate: $25/hr',
+    footer: 'Hourly rate: $15/hr',
   },
 ];
 

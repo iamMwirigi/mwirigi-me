@@ -1,8 +1,8 @@
 import React from 'react';
-import { projectOne, projectTwo, projectThree } from './Assets/data';
+import { projectOne, projectTwo, projectThree, projectFour } from './Assets/data';
 
 function Projects() {
-  const projects = [projectOne, projectTwo, projectThree, projectfour];
+  const projects = [projectOne, projectTwo, projectThree, projectFour];
 
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">

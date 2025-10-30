@@ -11,7 +11,7 @@ export const skills = [
     { name: 'PostgreSQL' },
     { name: 'Redis' },
     { name: 'CI/CD' },
-    { name: 'Shopify Store Setup & Customization' },
+    { name: 'CursorAI' },
     { name: 'Figma' },
     { name: 'Linux' },
     { name: 'Git' },

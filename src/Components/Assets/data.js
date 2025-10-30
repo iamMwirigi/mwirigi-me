@@ -1,8 +1,10 @@
 // Define the projects as objects
-const projectone = {
+const projectOne = {
     id: 1,
     name: 'Pich and Safe Business web',
-    description: 'Simple business web',
+    description: `A modern and responsive business website built to showcase company services, 
+  improve online visibility, and increase customer engagement. The platform features a clean user 
+  interface with smooth navigation, a contact form powered by EmailJS for direct messaging.`,
     technologies: ['JavaScript', 'ReactJS', 'Emailjs'],
     link: 'https://pich-and-safe.vercel.app/'
   };
@@ -23,8 +25,8 @@ const projectone = {
     technologies: ['Firebase',  'JavaScript', 'React'],
     link: '/'
   };
-const projectfour = {
-    id: 1,
+const projectFour = {
+    id: 4,
     name: 'Weather app',
     description: 'An intuitive weather application built using React and integrated with a weather API',
     technologies: ['HTML', 'CSS', 'JavaScript'],
@@ -32,7 +34,7 @@ const projectfour = {
   };
   
   // Export the projects using named exports
-  export { projectOne, projectTwo, projectThree, projectfour };
+  export { projectOne, projectTwo, projectThree, projectFour };
 
 
 
