@@ -1,15 +1,19 @@
 export const skills = [
     { name: 'HTML' },
-    { name: 'CSS' },
-    { name: 'Bootstrap CSS' },
     { name: 'Tailwind CSS' },
     { name: 'JavaScript' },
     { name: 'React' },
+    { name: 'Laravel' },
+    { name: 'PHP' },
     { name: 'Python' },
     { name: 'Django' },
-    { name: 'Flask' },
+    { name: 'Mysql' },
+    { name: 'PostgreSQL' },
+    { name: 'Redis' },
+    { name: 'CI/CD' },
     { name: 'Shopify Store Setup & Customization' },
-    { name: 'UI/UX Design' },
+    { name: 'Figma' },
+    { name: 'Linux' },
     { name: 'Git' },
    
   ];

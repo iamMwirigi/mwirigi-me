@@ -35,6 +35,16 @@ const Navbar = () => {
         </a>
 
         <a
+          href="#skills"
+          onClick={() => handleTabClick("#skills")}
+          className={`text-grey font-bold hover:text-gray-200 ${
+            activeTab === "#skills" ? "text-gray-200" : ""
+          }`}
+        >
+          Skills
+        </a>
+
+        <a
           href="#projects"
           onClick={() => handleTabClick("#projects")}
           className={`text-grey font-bold hover:text-gray-200 ${
@@ -45,13 +55,13 @@ const Navbar = () => {
         </a>
 
         <a
-          href="#skills"
-          onClick={() => handleTabClick("#skills")}
+          href="#pricing"
+          onClick={() => handleTabClick("#pricing")}
           className={`text-grey font-bold hover:text-gray-200 ${
-            activeTab === "#skills" ? "text-gray-200" : ""
+            activeTab === "#pricing" ? "text-gray-200" : ""
           }`}
         >
-          Skills
+          Pricing
         </a>
 
         <a

@@ -4,6 +4,7 @@ import Contact from './Components/Contact'
 import Projects from './Components/Projects'
 import Skills from './Components/Skills'
 import Navbar from './Components/Navbar'
+import Pricing from './Components/Pricing'
 import React from 'react';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Pricing />
       <Contact />
     </main>
   );

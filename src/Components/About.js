@@ -9,18 +9,13 @@ const About = () => {
         {/* Text section */}
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
         <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-  Hi, I'm Mwirigi.
-  <span className="block mt-4">I'm a Software Developer.</span>
-  <span className="block mt-4">Clocked-in.</span>
-  <span className="block mt-4">⭐⭐⭐⭐⭐</span>
+  Jambo, I'm Mwirigi.
+  <span className="block mt-4">A Software Engineer.</span>
 </h1>
 
 
-          <p className="mb-8 leading-relaxed">
-            A self-motivated, passionate, enthusiastic and certified software engineer from Kenya. I
-            have a good command of both oral and written English and Swahili. I possess excellent
-            organizational skills, am self-driven, have strong analytical skills, and am a good team leader
-            and player.
+          <p className="mb-7 leading-relaxed font-semibold">
+I’m a self-motivated, passionate, and certified software engineer. As a developer, I love building systems that actually work in real life — fast, secure, scalable, and reliable. My work focuses on solving real business problems by creating solutions that save time, increase revenue, improve customer experience, and scale as the business grows.
           </p>
 
           {/* Buttons */}
@@ -34,6 +29,11 @@ const About = () => {
               href="#projects"
               className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
               See My Past Work
+            </a>
+              <a
+              href="#pricing"
+              className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+              View My Pricing
             </a>
           </div>
         </div>
