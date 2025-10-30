@@ -2,7 +2,7 @@ import React from 'react';
 import { projectOne, projectTwo, projectThree } from './Assets/data';
 
 function Projects() {
-  const projects = [projectOne, projectTwo, projectThree];
+  const projects = [projectOne, projectTwo, projectThree, projectfour];
 
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">
