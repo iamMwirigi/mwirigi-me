@@ -74,7 +74,7 @@ export default function Contact() {
               placeholder="Enter your email address"  // Placeholder text
               required
             />
-            <p className="text-xs text-gray-400 mt-2">Enter a valid email address so we can get in touch.</p> {/* Helper text */}
+            <p className="text-xs text-gray-400 mt-2">Enter a valid email address so i can get in touch.</p> {/* Helper text */}
           </div>
 
           <div className="relative mb-4">
