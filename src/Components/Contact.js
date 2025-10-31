@@ -13,10 +13,11 @@ export default function Contact() {
     const templateParams = {
       from_name: name,
       reply_to: email,
+      email: email,
       message: message,
     };
 
-    emailjs.send('service_evin1ig', 'template_u8tudag', templateParams, '7PyrRrnhnv9D__Vb_')
+    emailjs.send('service_evin1ig', 'template_3fcim2c', templateParams, '7PyrRrnhnv9D__Vb_')
       .then(() => {
         alert("Message sent!");
         // Clear the input fields after submission
