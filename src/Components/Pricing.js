@@ -53,7 +53,7 @@ const columns = [
   },
   {
     title: 'Frontend Development',
-    subtitle: 'Modern interfaces with React, Tailwind CSS, and Vercel',
+    subtitle: 'Modern interfaces with React, Tailwind CSS, and Deployment',
     plans: [
       {
         title: 'Landing Page',
