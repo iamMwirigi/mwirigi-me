@@ -22,17 +22,17 @@ I’m a self-motivated, passionate, and certified software engineer. As a develo
           <div className="flex justify-center">
             <a
               href="#contact"
-              className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+              className="inline-flex text-white bg-green-500 border-0 py-1 px-4 focus:outline-none hover:bg-green-600 rounded-full text-sm shadow-md hover:shadow-lg transition-all duration-200 ease-in-out md:py-2 md:px-6 md:text-lg">
               Work With Me
             </a>
             <a
               href="#projects"
-              className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+              className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-1 px-4 focus:outline-none hover:bg-gray-700 hover:text-white rounded-full text-sm shadow-md hover:shadow-lg transition-all duration-200 ease-in-out md:py-2 md:px-6 md:text-lg">
               See My Past Work
             </a>
               <a
               href="#pricing"
-              className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+              className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-1 px-4 focus:outline-none hover:bg-gray-700 hover:text-white rounded-full text-sm shadow-md hover:shadow-lg transition-all duration-200 ease-in-out md:py-2 md:px-6 md:text-lg">
               View My Pricing
             </a>
           </div>
